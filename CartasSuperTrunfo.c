@@ -9,6 +9,11 @@ int main()  {
     float area1, area2;
     float pib1, pib2;
     int pturisticos1, pturisticos2;
+    float densidadec1;
+    float densidadec2;
+
+    densidadec1 = populacao1 / area1;
+    densidadec2 = populacao2 / area2;
 
     printf("Carta 1:\n");                          //PRIMEIRO CADASTRO
 
