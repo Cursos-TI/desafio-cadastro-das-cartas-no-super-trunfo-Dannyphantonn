@@ -60,7 +60,12 @@ int main()  {
 
     printf("Digite o número de pontos turísticos:\n");
     scanf("%i", &pturisticos2);
-                                                    //informações das cartas exibidas na tela
+     
+    
+    densidadec1 = populacao1 / area1;
+    densidadec2 = populacao2 / area2;
+    
+    //informações das cartas exibidas na tela
     printf("Carta 1:\n");
     printf("Estado: %s\n", estado1);
     printf("Código da Carta: %s\n", codcarta1);
@@ -68,7 +73,8 @@ int main()  {
     printf("População: %d\n", populacao1);
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões\n", pib1);
-    printf("Pontos turísticos: %d\n\n", pturisticos1);
+    printf("Pontos turísticos: %d\n", pturisticos1);
+    printf("Densidade populacional: %f\n\n",densidadec1);
 
     printf("Carta 2:\n");
     printf("Estado: %s\n", estado2);
@@ -78,6 +84,6 @@ int main()  {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões\n", pib2);
     printf("Pontos turísticos: %d\n", pturisticos2);
-
+    printf("Densidade populacional: %f\n",densidadec2);
     return 0;  
 }
