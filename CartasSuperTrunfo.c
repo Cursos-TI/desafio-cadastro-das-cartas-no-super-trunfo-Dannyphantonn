@@ -11,9 +11,10 @@ int main()  {
     int pturisticos1, pturisticos2;
     float densidadec1;
     float densidadec2;
+    float pibpcapita1;
+    float pibpcapita2;
 
-    densidadec1 = populacao1 / area1;
-    densidadec2 = populacao2 / area2;
+//-----------------------------------------------
 
     printf("Carta 1:\n");                          //PRIMEIRO CADASTRO
 
@@ -64,6 +65,8 @@ int main()  {
     
     densidadec1 = populacao1 / area1;
     densidadec2 = populacao2 / area2;
+    pibpcapita1 = pib1 / populacao1;
+    pibpcapita2 = pib2 / populacao2;
     
     //informações das cartas exibidas na tela
     printf("Carta 1:\n");
@@ -74,7 +77,9 @@ int main()  {
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões\n", pib1);
     printf("Pontos turísticos: %d\n", pturisticos1);
-    printf("Densidade populacional: %f\n\n",densidadec1);
+    printf("Densidade populacional: %f\n",densidadec1);
+    printf(" PIB per capita: %f\n\n",pibpcapita1);
+
 
     printf("Carta 2:\n");
     printf("Estado: %s\n", estado2);
@@ -85,5 +90,8 @@ int main()  {
     printf("PIB: %.2f bilhões\n", pib2);
     printf("Pontos turísticos: %d\n", pturisticos2);
     printf("Densidade populacional: %f\n",densidadec2);
+    printf("PIB per capita: %f\n",pibpcapita2);
+    
+    
     return 0;  
 }
