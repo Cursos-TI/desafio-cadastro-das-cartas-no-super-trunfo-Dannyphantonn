@@ -4,7 +4,7 @@ int main()  {
    
     char estado1[3], estado2[3];                   // VARIAVEIS CARTA 1;CARTA 2    
     char codcarta1[5], codcarta2[5];
-    char Ncidade1[50], Ncidade2[50];
+    char ncidade1[50], ncidade2[50];
     int populacao1, populacao2;
     float area1, area2;
     float pib1, pib2;
@@ -25,7 +25,7 @@ int main()  {
     scanf("%s", codcarta1);
 
     printf("Digite o nome da cidade:\n");
-    scanf(" %s", Ncidade1); 
+    scanf(" %s", ncidade1); 
 
     printf("Digite o número da população:\n");          
     scanf("%i", &populacao1);
@@ -48,7 +48,7 @@ int main()  {
     scanf("%s", codcarta2);
 
     printf("Digite o nome da cidade:\n");
-    scanf(" %s", Ncidade2);
+    scanf(" %s", ncidade2);
 
     printf("Digite o número da população:\n");          
     scanf("%i", &populacao2);
@@ -72,7 +72,7 @@ int main()  {
     printf("Carta 1:\n");
     printf("Estado: %s\n", estado1);
     printf("Código da Carta: %s\n", codcarta1);
-    printf("Cidade: %s\n", Ncidade1);
+    printf("Cidade: %s\n", ncidade1);
     printf("População: %d\n", populacao1);
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões\n", pib1);
@@ -84,14 +84,23 @@ int main()  {
     printf("Carta 2:\n");
     printf("Estado: %s\n", estado2);
     printf("Código da Carta: %s\n", codcarta2);
-    printf("Cidade: %s\n", Ncidade2);
+    printf("Cidade: %s\n", ncidade2);
     printf("População: %d\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões\n", pib2);
     printf("Pontos turísticos: %d\n", pturisticos2);
     printf("Densidade populacional: %f\n",densidadec2);
-    printf("PIB per capita: %f\n",pibpcapita2);
+    printf("PIB per capita: %f\n\n",pibpcapita2);
     
+    printf("Comparação de cartas (atributo: População)\n");
+
+    printf("Carta 1 %s - %d\n",ncidade1, populacao1 );
+    printf("Carta 2 %s - %d\n",ncidade2, populacao2 );
+    if( populacao1 > populacao2){
+     printf("carta 1 (%s) venceu",ncidade1);   
+    }else{ printf("Resultado:carta 2 (%s) venceu",ncidade2);}
+
+
     
     return 0;  
 }
