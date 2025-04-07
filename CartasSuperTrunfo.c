@@ -96,11 +96,20 @@ int main()  {
 
     printf("Carta 1 %s - %d\n",ncidade1, populacao1 );
     printf("Carta 2 %s - %d\n",ncidade2, populacao2 );
-    if( populacao1 > populacao2){
-     printf("carta 1 (%s) venceu",ncidade1);   
+    if( populacao1 == populacao2){
+        printf("**EMPATE**\n");
+        printf("Resultado:carta 1 (%s)\n",ncidade1);
+        printf("Resultado:carta 2 (%s)\n",ncidade2 );
+    }else if(populacao1 > populacao2){
+        printf("carta 1 (%s) venceu",ncidade1);
     }else{ printf("Resultado:carta 2 (%s) venceu",ncidade2);}
 
 
     
     return 0;  
 }
+
+
+
+//printf("carta 1 (%s) venceu",ncidade1);
+//else{ printf("Resultado:carta 2 (%s) venceu",ncidade2);}
