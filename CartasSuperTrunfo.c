@@ -117,15 +117,79 @@ switch(numswitch){
     break;
      default:
            printf("##Opção invalida##");
+    //------------------------------------------------------------------------------------------------
+     case 2 :
+     printf("Comparação de cartas (atributo: Area)\n");
+     printf("Carta 1 %s - %f\n",ncidade1, area1 );
+     printf("Carta 2 %s - %f\n",ncidade2, area2 );
+     if( area1 == area2){
+         printf("**EMPATE**\n");
+     }else if(area1 > area2){
+         printf("carta 1 (%s) venceu",ncidade1);
+     }else{ printf("Resultado:carta 2 (%s) venceu",ncidade2);}
+     break;
+      default:
+            printf("##Opção invalida##");
+
+     //--------------------------------------------------------------------------
+     case 3 : 
+     printf("Comparação de cartas (atributo: PIB)\n");
+     printf("Carta 1 %s - %f\n",ncidade1, pib1 );
+     printf("Carta 2 %s - %f\n",ncidade2, pib2 );
+     if( pib1 == pib2){
+         printf("**EMPATE**\n");
+     }else if(pib1 > pib2){
+         printf("carta 1 (%s) venceu",ncidade1);
+     }else{ printf("Resultado:carta 2 (%s) venceu",ncidade2);}
+     break;
+      default:
+            printf("##Opção invalida##"); 
+        
+      //------------------------------------------------------------------------------------------------
+     case 4 : 
+     printf("Comparação de cartas (atributo: População)\n");
+    printf("Carta 1 %s - %d\n",ncidade1, pturisticos1 );
+    printf("Carta 2 %s - %d\n",ncidade2, pturisticos2 );
+    if( pturisticos1 == pturisticos2){
+        printf("**EMPATE**\n");
+    }else if(pturisticos1 > pturisticos2){
+        printf("carta 1 (%s) venceu",ncidade1);
+    }else{ printf("Resultado:carta 2 (%s) venceu",ncidade2);}
+    break;
+     default:
+           printf("##Opção invalida##");
+
+    case 5 :
+    printf("Comparação de cartas (atributo: Densidadec1)\n");
+    printf("Carta 1 %s - %d\n",ncidade1, densidadec1 );
+    printf("Carta 2 %s - %d\n",ncidade2, densidadec2 );
+    if( populacao1 == populacao2){
+        printf("**EMPATE**\n");
+    }else if(populacao1 > populacao2){
+        printf("carta 1 (%s) venceu",ncidade1);
+    }else{ printf("Resultado:carta 2 (%s) venceu",ncidade2);}
+    break;
+     default:
+           printf("##Opção invalida##");
+    
+     case 6 :
+     printf("Comparação de cartas (atributo: PIB per capita)\n");
+    printf("Carta 1 %s - %f\n",ncidade1, pibpcapita1 );
+    printf("Carta 2 %s - %f\n",ncidade2, pibpcapita2);
+    if( populacao1 == populacao2){
+        printf("**EMPATE**\n");
+    }else if(pibpcapita1 > pibpcapita2){
+        printf("carta 1 (%s) venceu",ncidade1);
+    }else{ printf("Resultado:carta 2 (%s) venceu",ncidade2);}
+    break;
+     default:
+           printf("##Opção invalida##");
+    
+
+
+
+return 0;
 }
-    return 0;  
-}
-
-
-
-
-
-
 
 
 
