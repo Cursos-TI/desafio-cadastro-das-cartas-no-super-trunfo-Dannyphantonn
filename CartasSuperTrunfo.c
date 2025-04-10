@@ -154,9 +154,9 @@ switch(numswitch){
     printf("Comparação de cartas (atributo: Densidade)\n\n");
     printf("Carta 1 %s - %f\n",ncidade1, densidadec1 );
     printf("Carta 2 %s - %f\n",ncidade2, densidadec2 );
-    if( populacao1 == populacao2){
+    if( densidadec1 == densidadec2){
         printf("**EMPATE**\n");
-    }else if(populacao1 > populacao2){
+    }else if (!densidadec1 > densidadec2){
         printf("carta 1 (%s) venceu",ncidade1);
     }else{ printf("Resultado:carta 2 (%s) venceu",ncidade2);}
     break;
@@ -165,7 +165,7 @@ switch(numswitch){
      printf("Comparação de cartas (atributo: PIB per capita)\n");
     printf("Carta 1 %s - %f\n",ncidade1, pibpcapita1 );
     printf("Carta 2 %s - %f\n",ncidade2, pibpcapita2);
-    if( populacao1 == populacao2){
+    if( pibpcapita1 == pibpcapita2){
         printf("**EMPATE**\n");
     }else if(pibpcapita1 > pibpcapita2){
         printf("carta 1 (%s) venceu",ncidade1);
