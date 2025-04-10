@@ -157,7 +157,7 @@ switch(numswitch){
     if( densidadec1 == densidadec2){
         printf("**EMPATE**\n");
     }else if (!densidadec1 > densidadec2){
-        printf("carta 1 (%s) venceu",ncidade1);
+        printf("carta 2 (%s) venceu",ncidade2);
     }else{ printf("Resultado:carta 2 (%s) venceu",ncidade2);}
     break;
     //-----------------------------------------------------------------------------------------
