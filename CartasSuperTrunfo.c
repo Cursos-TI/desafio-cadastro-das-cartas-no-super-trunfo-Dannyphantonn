@@ -156,7 +156,7 @@ switch(numswitch){
     printf("Carta 2 %s - %f\n",ncidade2, densidadec2 );
     if( densidadec1 == densidadec2){
         printf("**EMPATE**\n");
-    }else if (!densidadec1 > densidadec2){
+    }else if (densidadec1 > densidadec2){
         printf("carta 2 (%s) venceu",ncidade2);
     }else{ printf("Resultado:carta 2 (%s) venceu",ncidade2);}
     break;
