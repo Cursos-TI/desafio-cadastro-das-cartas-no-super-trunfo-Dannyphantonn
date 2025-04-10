@@ -17,7 +17,7 @@ int main()  {
 
 //-----------------------------------------------
 
-    printf("Carta 1:\n");                          //PRIMEIRO CADASTRO
+    printf("Carta 1:\n");                          //PRIMEIRO CADASTRO----------------------------------
 
     printf("Digite o estado:\n");
     scanf("%s", estado1);
@@ -40,7 +40,7 @@ int main()  {
     printf("Digite o número de pontos turísticos:\n");
     scanf("%i", &pturisticos1);
 
-    printf("\nCarta 2:\n");                        // SEGUNDO CADASTRO ---------------------
+    printf("\nCarta 2:\n");                     // SEGUNDO CADASTRO ---------------------
 
     printf("Digite o estado:\n");
     scanf("%s", estado2);
@@ -93,7 +93,7 @@ int main()  {
     printf("Densidade populacional: %f\n",densidadec2);
     printf("PIB per capita: %f\n\n",pibpcapita2);
     
-    
+    //Opçoes de escolha---------------------------------------------------------------
     printf(" Escolha os seguintes atributos para comparação\n");
     printf("1 - atributo populacao\n");
     printf("2 - atributo area\n");         
@@ -126,7 +126,7 @@ switch(numswitch){
          printf("carta 1 (%s) venceu",ncidade1);
      }else{ printf("Resultado:carta 2 (%s) venceu",ncidade2);}
      break;
-     //--------------------------------------------------------------------------
+     //---------------------------------------------------------------------------------------------------
      case 3 : 
      printf("Comparação de cartas (atributo: PIB)\n");
      printf("Carta 1 %s - %f\n",ncidade1, pib1 );
@@ -140,7 +140,7 @@ switch(numswitch){
     
       //------------------------------------------------------------------------------------------------
      case 4 : 
-     printf("Comparação de cartas (atributo: População)\n");
+     printf("Comparação de cartas (atributo: População)\n\n");
     printf("Carta 1 %s - %d\n",ncidade1, pturisticos1 );
     printf("Carta 2 %s - %d\n",ncidade2, pturisticos2 );
     if( pturisticos1 == pturisticos2){
@@ -149,18 +149,18 @@ switch(numswitch){
         printf("carta 1 (%s) venceu",ncidade1);
     }else{ printf("Resultado:carta 2 (%s) venceu",ncidade2);}
     break;
-     
+     //-----------------------------------------------------------------------------------------------
     case 5 :
-    printf("Comparação de cartas (atributo: Densidadec1)\n");
-    printf("Carta 1 %s - %d\n",ncidade1, densidadec1 );
-    printf("Carta 2 %s - %d\n",ncidade2, densidadec2 );
+    printf("Comparação de cartas (atributo: Densidade)\n\n");
+    printf("Carta 1 %s - %f\n",ncidade1, densidadec1 );
+    printf("Carta 2 %s - %f\n",ncidade2, densidadec2 );
     if( populacao1 == populacao2){
         printf("**EMPATE**\n");
     }else if(populacao1 > populacao2){
         printf("carta 1 (%s) venceu",ncidade1);
     }else{ printf("Resultado:carta 2 (%s) venceu",ncidade2);}
     break;
-    
+    //-----------------------------------------------------------------------------------------
      case 6 :
      printf("Comparação de cartas (atributo: PIB per capita)\n");
     printf("Carta 1 %s - %f\n",ncidade1, pibpcapita1 );
@@ -173,7 +173,7 @@ switch(numswitch){
     break;
      default:
            printf("##Opção invalida##");
-    
+}  
 
 
 
